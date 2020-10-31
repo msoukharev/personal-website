@@ -1,0 +1,48 @@
+/* Overrides */
+.jumbotron {
+    background-color: rgb(179, 193, 225);
+}
+
+:root {
+    --color-peachy: rgba(247, 187, 174, 0.3);
+    --color-cyanish: rgba(150, 247, 247, 0.3);
+    --color-yellowish: rgba(255, 246, 150, 0.3);
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font-family: inherit;
+}
+
+.display-6 {
+    font-size: 2.0rem;
+    font-weight: 300;
+    line-height: 1.0;
+    font-family: inherit;
+}
+
+.mark-peachy {
+    background-color: var(--color-peachy);
+}
+
+.mark-cyanish {
+    background-color: var(--color-cyanish);
+}
+
+.mark-yellowish {
+    background-color: var(--color-yellowish);
+}
+
+.icon-sm {
+    font-size: 1.0rem;
+}
+
+.icon-md {
+    font-size: 2.0rem;
+}
+
+.icon-lg {
+    font-size: 3.0rem;
+}

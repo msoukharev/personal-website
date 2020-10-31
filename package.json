@@ -1,0 +1,27 @@
+{
+  "name": "personal-website",
+  "version": "0.0.1",
+  "description": "Personal website template",
+  "main": "scripts/serve.js",
+  "scripts": {
+    "test": "scrtips/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msoukharev/personal-website.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Max Soukharev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msoukharev/personal-website/issues"
+  },
+  "homepage": "https://github.com/msoukharev/personal-website#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
+}
