@@ -1,6 +1,6 @@
 /* Overrides */
 .jumbotron {
-    background-color: rgb(179, 193, 225);
+    border-radius: 0px !important;
 }
 
 :root {
