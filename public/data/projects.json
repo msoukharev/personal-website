@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Pydatamocker - Powerful Mock Data Generator for Python",
+        "description": "Create millions of records with various data types, distributions and dependencies!",
+        "tags": ["Python", "Numpy", "Pandas"],
+        "link": {
+            "link": "https://github.com/msoukharev/pydatamocker",
+            "name": "Github"
+        }
+    },
+    {
+        "name": "US Election Sentiment & Topic Study on Reddit",
+        "description": "Analyse Reddit user’s topics and sentiment during the US election activities on November 23rd - 27th, 2020",
+        "tags": [ "Python", "API Request Automation", "Jupyter Notebook" ]
+    }
+]

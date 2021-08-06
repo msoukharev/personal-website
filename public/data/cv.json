@@ -1,0 +1,20 @@
+{
+    "education": [
+        {
+            "place": "McGill University",
+            "timeline": "Fall 2018 - Winter 2022",
+            "details": "Software Engineering, Statisitcs"
+        }
+    ],
+    "work_experience": [
+        {
+            "name": "Developer Intern - Traction On Demand",
+            "description": "Developed custom Service Cloud functionality for a major North American retailer using Salesforce (Javascript, HTML, Apex)",
+            "logo": "https://media-exp1.licdn.com/dms/image/C560BAQGlRsYMcEq7aw/company-logo_200_200/0/1625250554761?e=2159024400&v=beta&t=gKX-WENHgQajtk88oxgnTeT7PR5wAr3cBWWtuDFgD8M",
+            "link": {
+                "name": "Website",
+                "link": "https://www.tractionondemand.com"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+.header {
+    border-radius: 0px !important;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font-family: inherit;
+}
+
+.display-6 {
+    font-size: 2.0rem;
+    font-weight: 300;
+    line-height: 1.0;
+    font-family: inherit;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
