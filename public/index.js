@@ -1,23 +1,8 @@
-import { cv, personal, projects } from './info.js'
+import { get_json, build_link, build_element } from "./util.js"
 
-const build_element = (tag, attributes, innerHtml = null, parent = null) => {
-  let el = document.createElement(tag)
-  for (const [key, value] of Object.entries(attributes)) {
-    el.setAttribute(key, value)
-  }
-  parent && parent.appendChild(el)
-  el.innerHTML = innerHtml
-  return el
-}
-
-const build_link = (name, link) => {
-  let a = build_element('a', {
-    'class': 'link-primary social mx-2',
-    'href': link,
-    'target': '_blank'
-  }, name)
-  return a
-}
+const personal_path = './data/personal.json'
+const cv_path = './data/cv.json'
+const projects_path = './data/projects.json'
 
 const build_card = (name, description, img_source = null, link = null, tags = null) => {
   let c = build_element('div', {
@@ -56,24 +41,30 @@ const build_card = (name, description, img_source = null, link = null, tags = nu
   return c
 }
 
-const populate = (cv, personal) => {
-  document.querySelector('.name').innerHTML = personal['name']
-  document.querySelector('.title').innerHTML = personal['title']
-  let socials = document.querySelector('.socials')
-  personal['socials'].map( el => {
-    console.log(el)
-    socials.append(build_link(el['name'], el['link']))
+const populate = () => {
+  get_json(personal_path, personal => {
+    document.querySelector('.name').innerHTML = personal['name']
+    document.querySelector('.title').innerHTML = personal['title']
+    let socials = document.querySelector('.socials')
+    personal['socials'].map( el => {
+      console.log(el)
+      socials.append(build_link(el['name'], el['link']))
+    })
   })
-  let w_e = document.querySelector('.work-experience')
-  cv['work_experience'].map(el => {
-    let c = build_card(el['name'], el['description'], el['logo'], el['link'])
-    w_e.appendChild(c)
+  get_json(cv_path, cv => {
+    let w_e = document.querySelector('.work-experience')
+    cv['work_experience'].map(el => {
+      let c = build_card(el['name'], el['description'], el['logo'], el['link'])
+      w_e.appendChild(c)
+    })
   })
-  let pr = document.querySelector('.projects')
-  projects.map(el => {
-    let c = build_card(el['name'], el['description'], el['logo'], el['link'], el['tags'])
-    pr.appendChild(c)
+  get_json(projects_path, projects => {
+    let pr = document.querySelector('.projects')
+    projects.map(el => {
+      let c = build_card(el['name'], el['description'], el['logo'], el['link'], el['tags'])
+      pr.appendChild(c)
+    })
   })
 }
 
-populate(cv, personal)
+populate()
