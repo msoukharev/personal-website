@@ -47,7 +47,6 @@ const populate = () => {
     document.querySelector('.title').innerHTML = personal['title']
     let socials = document.querySelector('.socials')
     personal['socials'].map( el => {
-      console.log(el)
       socials.append(build_link(el['name'], el['link']))
     })
   })

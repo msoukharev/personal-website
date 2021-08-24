@@ -1,7 +1,7 @@
 [
     {
         "name": "Pydatamocker - Powerful Mock Data Generator for Python",
-        "description": "Create millions of records with various data types, distributions and dependencies!",
+        "description": "Easily create millions of records with various data types, distributions and dependencies",
         "tags": ["Python", "Numpy", "Pandas"],
         "link": {
             "link": "https://github.com/msoukharev/pydatamocker",
